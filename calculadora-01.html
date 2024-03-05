@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro Porto Rodríguez">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Css/calculadora-01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <div class="pantallaCalculadora">
+            0
+        </div>
+        <div class="botones">
+            <div class="fila">
+                <button value="7" onclick="agregarNumero('7')">7</button>
+                <button value="8" onclick="agregarNumero('8')">8</button>
+                <button value="9" onclick="agregarNumero('9')">9</button>
+                <button value="-" onclick="agregarOperador('-')">-</button>
+            </div>
+            <div class="fila">
+                <button value="4" onclick="agregarNumero('4')">4</button>
+                <button value="5" onclick="agregarNumero('5')">5</button>
+                <button value="6" onclick="agregarNumero('6')">6</button>
+                <button value="+" onclick="agregarOperador('+')">+</button>
+            </div>
+            <div class="fila">
+                <button value="1" onclick="agregarNumero('1')">1</button>
+                <button value="2" onclick="agregarNumero('2')">2</button>
+                <button value="3" onclick="agregarNumero('3')">3</button>
+                <button value="&divide" onclick="agregarOperador('/')">&divide</button>
+            </div>
+            <div class="fila">
+                <button value="0" onclick="agregarNumero('0')">0</button>
+                <button value="." id="punto" onclick="agregarComa()">.</button>
+                <button value="=" onclick="resultado()">=</button>
+                <button value="&times" onclick="agregarOperador('*')">&times</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/scrip.js"></script>
+</body>
+</html>

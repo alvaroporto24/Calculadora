@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro Porto Rodríguez">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="pantallaCalculadora" id="pantallaCalculadora">
+            0
+        </div>
+        <div class="botones">
+            <div class="fila filaSuperior">
+                <button onclick="borrar()">AC</button>
+                <button onclick="cambiarSigno()">&plusmn</button>
+                <button onclick="operacionPorcentaje()">%</button>
+                <button onclick="agregarOperador('/')">&divide</button>
+            </div>
+            <div class="fila">
+                <button onclick="agregarNumero('7')">7</button>
+                <button onclick="agregarNumero('8')">8</button>
+                <button onclick="agregarNumero('9')">9</button>
+                <button onclick="agregarOperador('*')">&times</button>
+            </div>
+            <div class="fila">
+                <button onclick="agregarNumero('4')">4</button>
+                <button onclick="agregarNumero('5')">5</button>
+                <button onclick="agregarNumero('6')">6</button>
+                <button onclick="agregarOperador('-')">-</button>
+            </div>
+            <div class="fila">
+                <button onclick="agregarNumero('1')">1</button>
+                <button onclick="agregarNumero('2')">2</button>
+                <button onclick="agregarNumero('3')">3</button>
+                <button onclick="agregarOperador('+')">+</button>
+            </div>
+            <div class="fila">
+                <button class="doble" onclick="agregarNumero('0')">0</button>
+                <button id="punto" onclick="agregarComa()">,</button>
+                <button onclick="resultado()">=</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/scrip.js"></script>
+</body>
+</html>
